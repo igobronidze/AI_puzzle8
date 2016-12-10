@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.collections.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" fx:id="mainAnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="controller.MainFXMLController">
+  <children>
+    <SplitPane dividerPositions="0.637123745819398" focusTraversable="true" prefHeight="160.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <items>
+        <AnchorPane fx:id="leftAnchorPane" minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+          <children>
+            <BorderPane prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+              <bottom>
+                <HBox alignment="CENTER_RIGHT" minHeight="50.0" prefHeight="50.0" prefWidth="358.0">
+                  <children>
+                    <Button fx:id="shuffleButton" mnemonicParsing="false" onAction="#actionOnshuffleButton" prefWidth="90.0" style="-fx-font-family:sylfaen;&#10;-fx-font-size:15;" text="არევა" />
+                  </children>
+                  <padding>
+                    <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                  </padding>
+                </HBox>
+              </bottom>
+              <center>
+                <GridPane fx:id="mainGridPane" alignment="CENTER" gridLinesVisible="false" hgap="3.0" style="-fx-background-color:white;&#10;-fx-border-style: solid;&#10;-fx-border-width: 3px;&#10;-fx-border-color:white;" vgap="3.0">
+                  <children>
+                    <Button contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-font-family:sylfaen;&#10;-fx-font-size:35;&#10;-fx-background-color:#81BEF7;&#10;-fx-text-fill:white;" text="1" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+                    <Button fx:id="btn1" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-font-family:sylfaen;&#10;-fx-font-size:40;&#10;-fx-background-color:#81BEF7;&#10;-fx-text-fill:white;" text="1" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+                    <Button fx:id="btn3" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-font-family:sylfaen;&#10;-fx-font-size:40;&#10;-fx-background-color:#81BEF7;&#10;-fx-text-fill:white;" text="3" GridPane.columnIndex="2" GridPane.rowIndex="0" />
+                    <Button fx:id="btn4" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-font-family:sylfaen;&#10;-fx-font-size:40;&#10;-fx-background-color:#81BEF7;&#10;-fx-text-fill:white;" text="4" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+                    <Button fx:id="btn6" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-font-family:sylfaen;&#10;-fx-font-size:40;&#10;-fx-background-color:#81BEF7;&#10;-fx-text-fill:white;" text="6" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                    <Button fx:id="btn7" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-font-family:sylfaen;&#10;-fx-font-size:40;&#10;-fx-background-color:#81BEF7;&#10;-fx-text-fill:white;" text="7" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+                    <Button fx:id="btn0" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color:white;&#10;" text="" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                    <Button fx:id="btn2" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-font-family:sylfaen;&#10;-fx-font-size:40;&#10;-fx-background-color:#81BEF7;&#10;-fx-text-fill:white;" text="2" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+                    <Button fx:id="btn5" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-font-family:sylfaen;&#10;-fx-font-size:40;&#10;-fx-background-color:#81BEF7;&#10;-fx-text-fill:white;" text="5" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                    <Button fx:id="btn8" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-font-family:sylfaen;&#10;-fx-font-size:40;&#10;-fx-background-color:#81BEF7;&#10;-fx-text-fill:white;" text="8" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  </children>
+                  <columnConstraints>
+                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="10.0" />
+                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="10.0" />
+                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="10.0" />
+                  </columnConstraints>
+                  <rowConstraints>
+                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  </rowConstraints>
+                </GridPane>
+              </center>
+              <padding>
+                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" fx:id="x1" />
+              </padding>
+              <top>
+                <HBox alignment="CENTER" padding="$x1" prefHeight="50.0" prefWidth="358.0" spacing="15.0" BorderPane.alignment="CENTER">
+                  <children>
+                    <Label fx:id="mainLabel" style="-fx-font-family:sylfaen;&#10;-fx-font-size:15;" text="ამოირჩიეთ დაფის ზომა:" />
+                    <ComboBox fx:id="comboBox" minHeight="20.000091552734375" onAction="#actionOnComboBox" promptText="">
+                      <items>
+                        <FXCollections fx:factory="observableArrayList">
+                          <String fx:value="Item 1" />
+                          <String fx:value="Item 2" />
+                          <String fx:value="Item 3" />
+                        </FXCollections>
+                      </items>
+                    </ComboBox>
+                  </children>
+                </HBox>
+              </top>
+            </BorderPane>
+          </children>
+        </AnchorPane>
+        <AnchorPane id="rig" fx:id="rightAnchorPane" minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+          <children>
+            <SplitPane dividerPositions="0.35858585858585856" focusTraversable="true" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+              <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                  <children>
+                    <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="15.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                      <children>
+                        <CheckBox id="bf" fx:id="bfsCheckBox" mnemonicParsing="false" selected="true" style="-fx-font-family:sylfaen;&#10;-fx-font-size:15;" text="სრული გადარჩევა" />
+                        <CheckBox fx:id="f1CheckBox" mnemonicParsing="false" selected="true" style="-fx-font-family:sylfaen;&#10;-fx-font-size:15;" text="A* ალგორითმი (1)" />
+                        <CheckBox fx:id="f2CheckBox" mnemonicParsing="false" selected="true" style="-fx-font-family:sylfaen;&#10;-fx-font-size:15;" text="A* ალგორითმი (2)" />
+                        <Button id="shuffleButton" fx:id="solveButton" mnemonicParsing="false" onAction="#actionOnSolveButton" prefWidth="99.0" style="-fx-font-family:sylfaen;&#10;-fx-font-size:15;" text="დაწყება" />
+                      </children>
+                    </VBox>
+                  </children>
+                </AnchorPane>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="268.0" prefWidth="212.0">
+                  <children>
+                    <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="15.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                      <children>
+                        <Label fx:id="bfsLabel" style="-fx-font-family:sylfaen;&#10;-fx-font-size:15;&#10;" text="სრული გადარჩევა - 0.0 წამი" wrapText="true" />
+                        <Label id="bfsLabel" fx:id="f1Label" style="-fx-font-family:sylfaen;&#10;-fx-font-size:15;&#10;" text="ფუნქცია1 - 0.0 წამი" wrapText="true" />
+                        <Label id="bfsLabel" fx:id="f2Label" style="-fx-font-family:sylfaen;&#10;-fx-font-size:15;&#10;" text="ფუნქცია2 - 0.0 წამი" wrapText="true" />
+                        <Button id="shuffleButton" fx:id="resultButton" mnemonicParsing="false" onAction="#actionOnResultButton" prefWidth="99.0" style="-fx-font-family:sylfaen;&#10;-fx-font-size:15;" text="ამოხსნა" visible="false" />
+                        <Label fx:id="resultLabel" style="-fx-font-family:sylfaen;&#10;-fx-font-size:15;&#10;" text="" />
+                      </children>
+                      <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                      </padding>
+                    </VBox>
+                  </children>
+                </AnchorPane>
+              </items>
+            </SplitPane>
+          </children>
+        </AnchorPane>
+      </items>
+    </SplitPane>
+  </children>
+  <stylesheets>
+    <URL value="@mainfxml.css" />
+  </stylesheets>
+</AnchorPane>
